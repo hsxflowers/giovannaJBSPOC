@@ -12,4 +12,4 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=maquinabuild /app/target/*.jar ismael.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "giovanna.jar"]
+ENTRYPOINT ["java", "-jar", "demo.jar"]
